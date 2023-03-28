@@ -1,0 +1,123 @@
+.logo img {
+  width: 120px;
+  align-items: start;
+  align-items: baseline;
+  display: flex;
+  margin: 40px;
+}
+.icons img:hover,
+button:hover {
+  filter: invert(72%) sepia(47%) saturate(1671%) hue-rotate(247deg)
+    brightness(99%) contrast(84%);
+}
+
+@media (max-width: 1439px) {
+  body {
+    margin: 0;
+    background-color: #684bb1;
+    background-image: url(./images/bg-mobile.svg);
+    background-repeat: no-repeat;
+  }
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  font-family: Poppins;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+  letter-spacing: 0px;
+  text-align: center;
+  color: aliceblue;
+  overflow: hidden;
+}
+h1,
+p {
+  margin: 36px;
+}
+.hero-img img {
+  width: 296px;
+  margin: 30px 40px;
+}
+h1 {
+  font-size: 24px;
+  font-weight: 600;
+  line-height: 36px;
+  margin: 30px 48px 16px 47px;
+}
+p {
+  /* font-family: "Open Sans"; */
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  text-align: center;
+  margin: 0 35px 0 36px;
+  height: 120px;
+}
+
+button {
+  background: #ffffff;
+  box-shadow: 1px 3px 5px rgba(0, 0, 0, 0.269022);
+  border-radius: 20px;
+  height: 40px;
+  width: 200px;
+  cursor: pointer;
+  margin: 24px;
+}
+.icons img {
+  filter: brightness(0) invert(1);
+  margin: 5px;
+  cursor: pointer;
+}
+.icons {
+  margin: 40px;
+}
+.intro {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+a:link {
+  color: aqua;
+}
+
+@media (min-width: 1440px) {
+  main {
+    background-image: url(./images/bg-desktop.svg);
+    background-repeat: no-repeat;
+    background-color: #684bb1;
+  }
+  .logo {
+    width: auto;
+  }
+  .intro {
+    flex-direction: row;
+  }
+  .hero-img img {
+    width: 696px;
+    height: 493px;
+    float: left;
+  }
+  p,
+  .info {
+    float: right;
+    text-align: left;
+    font-weight: 400px;
+    font-size: 18px;
+    line-height: 27px;
+  }
+  h1 {
+    margin: 35px;
+    font-family: "Poppins";
+    font-style: normal;
+    font-weight: 600;
+    font-size: 40px;
+    line-height: 60px;
+    width: 487px;
+  }
+  .icons {
+    margin-left: 1200px;
+  }
+}
